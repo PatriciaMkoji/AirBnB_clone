@@ -5,7 +5,6 @@ This module contains the class "BaseModel"
 that defines all common attributes/methods 
 for other classes in this project
 """
-
 from datetime import datetime
 import uuid
 
