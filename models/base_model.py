@@ -19,21 +19,21 @@ class BaseModel:
         """
         tform = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid4())
-        self.created_at = datetime.today()
-        self.updated_at = datetime.today()
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
         if len(kwargs) != 0:
-            for k, v in kwargs.items():
-                if k == "created_at" or k == "updated_at":
-                    self.__dict__[k] = datetime.strptime(v, tform)
+            for key, value in kwargs.items():
+                if key == "created_at" or key == "updated_at":
+                    self.__dict__[key] = datetime.strptime(value, tform)
                 else:
-                    self.__dict__[k] = v
+                    self.__dict__[key] = value
         else:
             models.storage.new(self)
 
     def save(self):
         """changes updated_at with the current datetime."""
-        self.updated_at = datetime.today()
-        models.storage.save()
+        self.updated_at = datetime.now()
+        models.storage.save(self)
 
     def to_dict(self):
         """This methos Returns the dictionary
@@ -48,6 +48,8 @@ class BaseModel:
         return rdict
 
     def __str__(self):
-        """Return the print/str representation of the BaseModel instance."""
+        """Return the print/str representation of the 
+        BaseModel instance.
+        """
         clname = self.__class__.__name__
         return "[{}] ({}) {}".format(clname, self.id, self.__dict__)
