@@ -33,7 +33,7 @@ class BaseModel:
     def save(self):
         """changes updated_at with the current datetime."""
         self.updated_at = datetime.today()
-        models.storage.save(self)
+        models.storage.save()
 
     def to_dict(self):
         """This methos Returns the dictionary
