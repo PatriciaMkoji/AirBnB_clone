@@ -89,7 +89,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             new_obj = models.storage.all().get(class_name + '.' + obj_id)
             if new_obj is None:
-                print('** no instance found **')
+                print("** no instance found **")
             else:
                 print(new_obj)
 
