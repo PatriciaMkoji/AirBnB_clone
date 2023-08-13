@@ -12,7 +12,6 @@ class BaseModel:
 
     def __init__(self, *args, **kwargs):
         """ For Initialize a new BaseModel.
-
         Args:
             *args (any): Unused.
             **kwargs (dict): Key/value pairs of attributes.
