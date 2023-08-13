@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 """
-a module that contains the entery point of the command interpreter
+a module that contains the entry point of the command interpreter
 """
-
-
 import cmd
 import models
 from datetime import datetime
