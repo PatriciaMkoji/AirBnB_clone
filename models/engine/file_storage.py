@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module Defines the 
+"""This module Defines the
 FileStorage class.
 """
 import json
