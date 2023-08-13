@@ -129,7 +129,8 @@ class HBNBCommand(cmd.Cmd):
             print([str(obj) for obj in objects])
         elif class_name in self.available_classes:
             keys = objects.keys()
-            print([str(objects[key]) for key in keys if key.startswith(class_name)])
+            print([str(objects[key]) for key
+                  in keys if key.startswith(class_name)])
         else:
             print("** class doesn't exist **")
 
