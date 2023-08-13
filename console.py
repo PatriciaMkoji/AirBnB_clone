@@ -64,9 +64,9 @@ class HBNBCommand(cmd.Cmd):
         cmnd = self.parseline(arg)[0]
 
         if cmnd is None or cmnd == "":
-            print("**class name missing**")
+            print("** class name missing **")
         elif cmnd not in self.available_classes:
-            print("**class doesn't exist**")
+            print("** class doesn't exist **")
         else:
             new = eval(cmnd + "()")
             new.save()
