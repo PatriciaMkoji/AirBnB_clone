@@ -11,7 +11,7 @@ We accomplish this in 3 steps:
 _____________
 ### Modules used:
 
-|Applications|Modules used|
+|Applications|Modules|
 |--------|--------|
 |Console implementation|cmd|
 |For varius time use cases| datetime|
