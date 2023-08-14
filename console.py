@@ -160,8 +160,8 @@ class HBNBCommand(cmd.Cmd):
                 print('** no instance found **')
                 if args_size == 2:
                     print('** attribute name missing **')
-                elif args_size < 4:
-                    print('** value missing **')
+                elif args_size == 3:
+                    print('** attribute missing **')
                 else:
                     args[3] = self.analyze_parameter_value(args[3])
                     try:
