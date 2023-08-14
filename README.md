@@ -17,6 +17,7 @@ _____________
 |Usage Module|uuid|
 |------|-------|
 |Serialize/Deserialize the Files|JSON|
+|-----|--------|
 
 ### We also used
 *args and **Kwargs
