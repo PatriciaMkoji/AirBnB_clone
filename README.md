@@ -11,7 +11,7 @@ _____________
 ### Modules used:
 
 |Usage Module| cmd|
-|-------|-------|
+|--------|--------|
 |For varius time use cases| datetime|
 |For unique identity|uuid|
 |Serialize/Deserialize the Files|json|
