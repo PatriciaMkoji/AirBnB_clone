@@ -10,8 +10,9 @@ We accomplish this in 3 steps:
 _____________
 ### Modules used:
 
-|Usage Module| cmd|
+|Applications|Modules used|
 |--------|--------|
+|Console implementation|cmd|
 |For varius time use cases| datetime|
 |For unique identity|uuid|
 |Serialize/Deserialize the Files|json|
