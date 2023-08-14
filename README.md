@@ -12,12 +12,9 @@ _____________
 
 |Usage Module| cmd|
 |-------|-------|
-|Usage Module| datetime|
-|-----|-------|
-|Usage Module|uuid|
-|------|-------|
-|Serialize/Deserialize the Files|JSON|
-|-----|--------|
+|For varius time use cases| datetime|
+|For unique identity|uuid|
+|Serialize/Deserialize the Files|json|
 
 ### We also used
 *args and **Kwargs
