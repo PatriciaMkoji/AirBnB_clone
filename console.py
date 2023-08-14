@@ -129,14 +129,20 @@ class HBNBCommand(cmd.Cmd):
         Prints all string rep of all instances based /not on the class name
 
         """
-        objects = models.storage.all()
-        class_name = self.parseline(arg)[0]
-        if class_name is None:
-            print([str(obj) for obj in objects])
-        elif class_name in self.available_classes:
-            keys = objects.keys()
-            print([str(objects[key]) for key
-                  in keys if key.startswith(class_name)])
+        #objects = models.storage.all()
+        #class_name = self.parseline(arg)[0]
+        #if class_name is None:
+            #print([str(obj) for obj in objects])
+        #elif class_name in self.available_classes:
+            #keys = objects.keys()
+            #print([str(objects[key]) for key
+                  #in keys if key.startswith(class_name)])
+        class_name = arg.split('.')[0]
+        if class_name in self.available_classes:
+            objects = models.storage.all()
+            class_instances = [str(objects[key]) for key in objects.keys()
+                    if key.startwith(class_name + '.')]
+            print(class_instances)
         else:
             print("** class doesn't exist **")
 
@@ -160,8 +166,10 @@ class HBNBCommand(cmd.Cmd):
                 print('** no instance found **')
                 if args_size == 2:
                     print('** attribute name missing **')
-                elif args_size == 3:
-                    print('** attribute missing **')
+                elif argsize == 3:
+                    print('** attribute name missing **')
+                elif args_size == 4:
+                    print('** value missing **')
                 else:
                     args[3] = self.analyze_parameter_value(args[3])
                     try:
