@@ -1,20 +1,22 @@
 # AirBnB_clone
+![AirBnB Logo](ABC5B603-8D94-49EC-867D-1DD90E0AC027.png)
 
-Description
+## Description
 
-The goal of the project is to deploy on your server a simple copy of the AirBnB website (https://www.airbnb.com/)
+The goal of the project is to deploy to server a simple copy of the [AirBnB website](https://www.airbnb.com/)
 We accomplish this in 3 steps:
          FrontEnd -> Console
          BackEnd -> OOPs
          Storage -> File system
+_____________
+### Modules used:
 
-Modules used:
+|Applications|Modules|
+|--------|--------|
+|Console implementation|cmd|
+|For varius time use cases| datetime|
+|For unique identity|uuid|
+|Serialize/Deserialize the Files|json|
 
-Usage Module CMD.
-Usage Module DateTime.
-Usage Module Uuid.
-Serialize and Deserialize the Files JSON.
-Usage args/Kwargs
-Usage Packges Python
-
-Commands CMD used:
+### We also used
+*args and **Kwargs
